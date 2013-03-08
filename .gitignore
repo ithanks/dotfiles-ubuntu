@@ -1,7 +1,37 @@
-# folders
+# Applications
+.dropbox*
+
+# History logs
+.bash_history
+.lesshst
+
+# Folders
 Downloads/
 Dropbox/
 
-# history logs
-.bash_history
-.lesshst
+# Defaults
+# folders
+.cache/
+.compiz-1/
+.config/
+.dbus/
+.fontconfig/
+.gconf/
+.gnome2/
+.gstreamer-*
+.local/
+.mission-control/
+.mozilla/
+.pki/
+.pulse*
+.thumbnails/
+.xinput.d/
+# files
+.ICEauthority
+.Xauthority
+.dmrc
+.face
+.pam_environment
+.gtk-bookmarks
+.xsession-*
+examples.desktop
