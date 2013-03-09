@@ -1,16 +1,20 @@
-# Applications
-.dropbox*
-
 # History logs
 .bash_history
 .lesshst
 
-# Folders
-Downloads/
+# Application Folders
 Dropbox/
 
-# Defaults
-# folders
+# Application Files
+.dropbox*
+
+# Custom Folders
+dev/
+data/
+docs/
+
+# Default folders
+Downloads/
 .cache/
 .compiz-1/
 .config/
@@ -26,7 +30,9 @@ Dropbox/
 .pulse*
 .thumbnails/
 .xinput.d/
-# files
+
+# Default files 
+examples.desktop
 .ICEauthority
 .Xauthority
 .dmrc
@@ -34,4 +40,3 @@ Dropbox/
 .pam_environment
 .gtk-bookmarks
 .xsession-*
-examples.desktop
