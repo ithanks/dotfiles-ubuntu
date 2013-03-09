@@ -8,6 +8,7 @@ They are fit for my Lenovo ThinkPad X1 Carbon.
 ### Vim
 ### Tmux
 - My `.tmux.conf` is based on [Florian Crouzat's](http://files.floriancrouzat.net/dotfiles/.tmux.conf), where I've commented out stuff and added pane selection key bindings.
+
 ### Git
 - [scm_breeze](https://github.com/ndbroadbent/scm_breeze) is a MUST-GET for git!
 
