@@ -4,9 +4,13 @@
 
 # Application Folders
 Dropbox/
+.macromedia/
 
 # Application Files
 .dropbox*
+
+# Sensitive folders
+.ssh/*
 
 # Custom Folders
 dev/
