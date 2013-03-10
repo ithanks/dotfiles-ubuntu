@@ -1,9 +1,6 @@
 [submodule ".scm_breeze"]
 	path = .scm_breeze
 	url = git://github.com/ndbroadbent/scm_breeze.git
-[submodule ".z"]
-	path = .z
-	url = https://github.com/rupa/z
 [submodule ".vim/bundle/vim-pathogen"]
 	path = .vim/bundle/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
