@@ -8,6 +8,8 @@ Dropbox/
 
 # Application Files
 .dropbox*
+.viminfo
+.z
 
 # Sensitive folders
 .ssh/*
