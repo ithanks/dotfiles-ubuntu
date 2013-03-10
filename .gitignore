@@ -5,6 +5,8 @@
 # Application Folders
 Dropbox/
 .macromedia/
+.freerdp/
+.remmina/
 
 # Application Files
 .dropbox*
