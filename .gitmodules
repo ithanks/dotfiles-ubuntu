@@ -10,3 +10,6 @@
 [submodule ".vim/bundle/vim-surround"]
 	path = .vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "bin/z"]
+	path = bin/z
+	url = https://github.com/rupa/z.git

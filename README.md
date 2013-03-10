@@ -9,9 +9,9 @@ They are fit for my Lenovo ThinkPad X1 Carbon.
 - [z](https://github.com/rupa/z)
 
 ### Vi
-The following Vim packages are activated via [pathogen](https://github.com/tpope/vim-pathogen.git).
-- [ctrlp](https://github.com/kien/ctrlp.vim.git)
-- [vim-surround](https://github.com/tpope/vim-surround.git)
+The following Vim packages are activated via [pathogen](https://github.com/tpope/vim-pathogen).
+- [ctrlp](https://github.com/kien/ctrlp.vim)
+- [vim-surround](https://github.com/tpope/vim-surround)
 
 ### Tmux
 - My `.tmux.conf` is based on [Florian Crouzat's](http://files.floriancrouzat.net/dotfiles/.tmux.conf), where I've commented out stuff and added pane selection key bindings.
