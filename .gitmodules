@@ -1,6 +1,15 @@
-[submodule "/home/e9t/.scm_breeze"]
-	path = /home/e9t/.scm_breeze
+[submodule ".scm_breeze"]
+	path = .scm_breeze
 	url = git://github.com/ndbroadbent/scm_breeze.git
 [submodule ".z"]
 	path = .z
 	url = https://github.com/rupa/z
+[submodule ".vim/bundle/vim-pathogen"]
+	path = .vim/bundle/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen.git
+[submodule ".vim/bundle/ctrlp.vim"]
+	path = .vim/bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule ".vim/bundle/vim-surround"]
+	path = .vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
