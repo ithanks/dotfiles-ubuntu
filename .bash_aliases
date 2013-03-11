@@ -31,3 +31,7 @@ alias f='nautilus .'
 
 # z
 . "$HOME/bin/z/z.sh"
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"

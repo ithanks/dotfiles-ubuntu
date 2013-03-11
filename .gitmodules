@@ -13,3 +13,6 @@
 [submodule "bin/z"]
 	path = bin/z
 	url = https://github.com/rupa/z.git
+[submodule ".rbenv"]
+	path = .rbenv
+	url = git@github.com:sstephenson/rbenv.git
