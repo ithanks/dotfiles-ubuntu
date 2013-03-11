@@ -1,12 +1,14 @@
 # History logs
 .bash_history
 .lesshst
+.vim/.netrwhist
 
 # Application Folders
 Dropbox/
 .macromedia/
 .freerdp/
 .remmina/
+.filezilla/
 
 # Application Files
 .dropbox*
