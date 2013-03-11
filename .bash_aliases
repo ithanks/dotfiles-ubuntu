@@ -1,7 +1,7 @@
 # Enable colors in bash
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagacedx
-export PS1='\n\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$ '
+export PS1='\n\[\033[01;35m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$ '
 
 # Some more ls aliases
 alias ll='ls -alF'
