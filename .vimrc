@@ -24,6 +24,9 @@ let g:mapleader = ","
 " Set utf8 as standard encoding
 set encoding=utf8
 
+" Use Unix as the standard file type
+set ffs=unix,dos,mac
+
 " Sets how many lines of history VIM has to remember
 set history=700
 
