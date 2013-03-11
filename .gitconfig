@@ -4,3 +4,7 @@
 
 [color]
     ui = auto
+
+[alias]
+    forget = rm --cached
+    unstage = reset --soft HEAD^
