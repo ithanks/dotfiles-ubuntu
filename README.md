@@ -3,7 +3,6 @@
 My dotfiles for Ubuntu have just started out.
 They are fit for my Lenovo ThinkPad X1 Carbon.
 
-
 ## Features
 ### Bash
 - [z](https://github.com/rupa/z)
