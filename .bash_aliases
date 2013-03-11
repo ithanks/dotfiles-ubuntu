@@ -24,6 +24,7 @@ alias start_pg='pg_ctl -D /usr/local/var/postgres -l logfile start'
 alias stop_pg='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 alias status_pg='pg_ctl -D /usr/local/var/postgres status'
 alias gw='open http://localhost:1234/?o=age'
+alias f='nautilus .'
 
 # SCM Breeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
