@@ -26,6 +26,7 @@ alias status_pg='pg_ctl -D /usr/local/var/postgres status'
 alias gw='open http://localhost:1234/?o=age'
 alias f='nautilus .'
 alias ah='apt-history | grep " install " | tail'
+alias open='gnome-open'
 
 # SCM Breeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
