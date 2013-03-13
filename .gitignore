@@ -2,6 +2,7 @@
 .bash_history
 .lesshst
 .vim/.netrwhist
+.pip/pip.log
 
 # Application Folders
 Dropbox/
