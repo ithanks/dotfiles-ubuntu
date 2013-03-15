@@ -49,14 +49,14 @@ diary() {
     fname=$dir/$(date "+%Y-%m-%d")-$final.md
     echo $fname
 
-    temp[0]="'''"
+    temp[0]="---"
     temp[1]="layout: diary"
     temp[2]="title: $1"
     temp[3]="date: $(date '+%Y-%m-%d %H:%M')"
     temp[4]="comments: false"
     temp[5]="categories: []"
     temp[6]="original: null"
-    temp[7]="'''"
+    temp[7]="---"
 
     printf "%s\n" "${temp[@]}" > $fname
     vi $fname
