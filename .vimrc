@@ -56,9 +56,10 @@ set incsearch
 syntax enable
 
 try
+    let g:solarized_termtrans=1
     set background=dark
     colorscheme solarized
-    se t_Co=256
+    set t_Co=256
 catch
 endtry
 
