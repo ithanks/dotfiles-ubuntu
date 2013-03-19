@@ -11,6 +11,10 @@ Dropbox/
 .remmina/
 .filezilla/
 .gem/
+.everpad/
+.irssi/
+.jython-cache/
+.wine/
 
 # Application Files
 .dropbox*
