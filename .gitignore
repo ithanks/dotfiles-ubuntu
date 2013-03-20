@@ -15,6 +15,7 @@ Dropbox/
 .irssi/
 .jython-cache/
 .wine/
+.qgis/
 
 # Application Files
 .dropbox*
@@ -28,6 +29,7 @@ Dropbox/
 dev/
 data/
 docs/
+bin/
 
 # Default folders
 Downloads/
