@@ -16,6 +16,8 @@ Dropbox/
 .jython-cache/
 .wine/
 .qgis/
+.googleearth/
+.npm/
 
 # Application Files
 .dropbox*
@@ -34,6 +36,8 @@ bin/
 # Default folders
 Downloads/
 Videos/
+Documents/
+Pictures/
 .cache/
 .compiz-1/
 .config/
