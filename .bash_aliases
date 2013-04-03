@@ -30,6 +30,7 @@ alias f='nautilus .'
 alias ah='apt-history | grep " install " | tail'
 alias open='gnome-open'
 alias chrome='/usr/bin/google-chrome'
+alias lc='wc -l *.py'
 
 # SCM Breeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
