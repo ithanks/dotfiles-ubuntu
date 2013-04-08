@@ -31,6 +31,7 @@ alias ah='apt-history | grep " install " | tail'
 alias open='gnome-open'
 alias chrome='/usr/bin/google-chrome'
 alias lc='wc -l *.py'
+alias dpd='find . -name "*.py" | xargs grep import'
 
 # SCM Breeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
