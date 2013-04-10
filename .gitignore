@@ -18,6 +18,7 @@ Dropbox/
 .qgis/
 .googleearth/
 .npm/
+.vimgolf/
 
 # Application Files
 .dropbox*
