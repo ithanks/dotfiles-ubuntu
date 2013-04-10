@@ -24,6 +24,8 @@ Dropbox/
 .dropbox*
 .viminfo
 .z
+.pgadmin3
+.pgpass
 
 # Sensitive folders
 .ssh/*
