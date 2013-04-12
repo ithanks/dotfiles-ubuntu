@@ -32,6 +32,8 @@ alias open='gnome-open'
 alias chrome='/usr/bin/google-chrome'
 alias lc='wc -l *.py'
 alias dpd='find . -name "*.py" | xargs grep import'
+alias psql='sudo -u postgres psql'
+alias lgdb='mysql -h 147.46.94.251 -u root lgtv'
 
 # SCM Breeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
