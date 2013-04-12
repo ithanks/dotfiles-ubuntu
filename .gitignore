@@ -3,6 +3,8 @@
 .lesshst
 .vim/.netrwhist
 .pip/pip.log
+.mysql_history
+pgadmin.log
 
 # Application Folders
 Dropbox/
@@ -19,6 +21,8 @@ Dropbox/
 .googleearth/
 .npm/
 .vimgolf/
+.mysql/
+.pylint.d/
 
 # Application Files
 .dropbox*
