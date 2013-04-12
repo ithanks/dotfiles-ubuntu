@@ -16,3 +16,6 @@
 [submodule ".rbenv"]
 	path = .rbenv
 	url = git@github.com:sstephenson/rbenv.git
+[submodule ".vim/bundle/pylint.vim.git"]
+	path = .vim/bundle/pylint.vim.git
+	url = git@github.com:orenhe/pylint.vim.git
