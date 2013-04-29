@@ -62,6 +62,7 @@ diary() {
     vi $fname
 }
 
+# Get apt-history
 function apt-history(){
       case "$1" in
         install)
@@ -80,4 +81,14 @@ function apt-history(){
               cat /var/log/dpkg.log
               ;;
       esac
+}
+
+# Compile TeX and open pdf
+function comtex() {
+    [[ -n "$1" ]] || { echo "Usage: diary [title]"; return; }
+    pdflatex $1
+    bibtex ${1/.tex}.aux
+    pdflatex $1
+    pdflatex $1
+    open ${1/.tex}.pdf
 }
