@@ -132,6 +132,3 @@ autocmd! BufNewFile * silent! 0r ~/.vim/skel/template.%:e
 " Enable pathogen
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
-
-" Enable pylint
-autocmd FileType python compiler pylint
