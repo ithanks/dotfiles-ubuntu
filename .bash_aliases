@@ -34,6 +34,7 @@ alias lc='wc -l *.py'
 alias dpd='find . -name "*.py" | xargs grep import'
 alias psql='sudo -u postgres psql'
 alias lgdb='mysql -h 147.46.94.251 -u root lgtv'
+alias mysql='mysql -u root -p'
 alias gaeup='~/bin/gae/appcfg.py update ~/dev/sites/snuie.org'
 
 # SCM Breeze
