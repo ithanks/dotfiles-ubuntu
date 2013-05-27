@@ -5,6 +5,8 @@
 .pip/pip.log
 .mysql_history
 pgadmin.log
+.Rhistory
+.scala_history
 
 # Application Folders
 Dropbox/
@@ -13,8 +15,13 @@ nltk_data/
 .freerdp/
 .remmina/
 .filezilla/
+.eclipse/
 .gem/
+.gimp-*/
 .everpad/
+.lastpass/
+.metadata/
+.rstudio-desktop/
 .irssi/
 .jython-cache/
 .wine/
@@ -24,8 +31,10 @@ nltk_data/
 .vimgolf/
 .mysql/
 .pylint.d/
+.subversion/
 
 # Application Files
+.appcfg*
 .dropbox*
 .viminfo
 .z
