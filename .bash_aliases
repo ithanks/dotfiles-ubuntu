@@ -39,6 +39,7 @@ alias psql='sudo -u postgres psql'
 alias lgdb='mysql -h 147.46.94.251 -u root lgtv'
 alias mysql='mysql -u root -p'
 alias gaeup='~/bin/gae/appcfg.py update ~/dev/sites/snuie.org'
+alias duh='du -d 0 -h'
 
 # SCM Breeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
@@ -49,3 +50,6 @@ alias gaeup='~/bin/gae/appcfg.py update ~/dev/sites/snuie.org'
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# rJava
+export LD_LIBRARY_PATH="/usr/lib/jvm/default-java/jre/lib/amd64/server"
