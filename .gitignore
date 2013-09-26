@@ -1,6 +1,7 @@
 # History logs
 .bash_history
 .lesshst
+.octave_hist
 .vim/.netrwhist
 .pip/pip.log
 .mysql_history
@@ -13,11 +14,15 @@ pgadmin.log
 Dropbox/
 nltk_data/
 .ant/
+.appdata/
 .DeskTime/
+.IdeaIC12/
 .java/
 .macromedia/
+.matlab/
 .rpmdb/
 .VirtualBox/
+VirtualBox VMs/
 .freerdp/
 .remmina/
 .filezilla/
@@ -46,7 +51,7 @@ nltk_data/
 .appcfg*
 .dropbox*
 .gitk
-.viminfo
+.viminfo*
 .z
 .pgadmin3
 .pgpass
@@ -59,6 +64,7 @@ dev/
 data/
 docs/
 bin/
+share/
 
 # Default folders
 Downloads/
