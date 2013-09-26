@@ -84,8 +84,8 @@ function apt-history(){
 }
 
 # Compile TeX and open pdf
-function comtex() {
-    [[ -n "$1" ]] || { echo "Usage: diary [title]"; return; }
+function ctex() {
+    [[ -n "$1" ]] || { echo "Usage: ctex [somefile].txt"; return; }
     pdflatex $1
     bibtex ${1/.tex}.aux
     pdflatex $1
