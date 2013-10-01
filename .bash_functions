@@ -86,7 +86,7 @@ function apt-history(){
 # Compile TeX and open pdf
 function ctex() {
     [[ -n "$1" ]] || { echo "Usage: ctex [somefile].tex"; return; }
-    pdflatex $1
+    pdflatex -shell-escape $1
     bibtex ${1/.tex}.aux
     pdflatex $1
     pdflatex $1
