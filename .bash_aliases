@@ -56,3 +56,9 @@ export LD_LIBRARY_PATH="/usr/lib/jvm/default-java/jre/lib/amd64/server"
 
 # MATLAB
 export PATH="$PATH:$HOME/bin/matlab/r2013b/bin"
+
+# Mendeley
+export PATH="$PATH:$HOME/bin/mendeleydesktop-1.10.1-linux-x86_64/bin"
+
+# Intellij by JetBrains
+export PATH="$PATH:$HOME/bin/idea-IC-129.713/bin"
