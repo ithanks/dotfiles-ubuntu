@@ -62,6 +62,33 @@ diary() {
     vi $fname
 }
 
+# Meeting logs
+meeting() {
+    [[ -n "$1" ]] || { echo "Usage: diary [title]"; return; }
+
+    dir="/home/e9t/Dropbox/meetings"
+    strip=${1//-/}
+    merge=${strip// /-}
+    clean=${merge//[^a-zA-Z0-9\-]/}
+    lower="$(echo $clean | tr '[:upper:]' '[:lower:]')"
+    short="${lower:0:30}"
+    final=${short//-./.}
+    fname=$dir/$(date "+%Y-%m-%d")-$final.md
+    echo $fname
+
+    temp[0]="---"
+    temp[1]="layout: meeting"
+    temp[2]="title: \"$1\""
+    temp[3]="date: $(date '+%Y-%m-%d %H:%M')"
+    temp[4]="comments: false"
+    temp[5]="categories: []"
+    temp[6]="original: null"
+    temp[7]="---"
+
+    printf "%s\n" "${temp[@]}" > $fname
+    vi $fname
+}
+
 # Get apt-history
 function apt-history(){
       case "$1" in
