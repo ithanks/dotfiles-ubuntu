@@ -64,9 +64,9 @@ diary() {
 
 # Meeting logs
 meeting() {
-    [[ -n "$1" ]] || { echo "Usage: diary [title]"; return; }
+    [[ -n "$1" ]] || { echo "Usage: meeting [title]"; return; }
 
-    dir="/home/e9t/Dropbox/meetings"
+    dir="/home/e9t/Dropbox/docs/meetings"
     strip=${1//-/}
     merge=${strip// /-}
     clean=${merge//[^a-zA-Z0-9\-]/}
