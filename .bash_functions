@@ -89,6 +89,15 @@ meeting() {
     vi $fname
 }
 
+
+# Research logs
+research() {
+    dir="/home/e9t/Dropbox/docs/research"
+    fname=$dir/$(date "+%Y-%m-%d").md
+    echo $fname
+    vi $fname
+}
+
 # Get apt-history
 function apt-history(){
       case "$1" in
