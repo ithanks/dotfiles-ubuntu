@@ -40,6 +40,9 @@ alias lgdb='mysql -h 147.46.94.251 -u root lgtv'
 alias mysql='mysql -u root -p'
 alias gaeup='~/bin/gae/appcfg.py update ~/dev/sites/snuie.org'
 alias duh='du -d 0 -h'
+alias subl='$HOME/bin/Sublime\ Text\ 2/sublime_text'
+alias plot='$HOME/dev/utils/plot.py'
+alias gephi='$HOME/bin/gephi/bin/gephi'
 
 # SCM Breeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
@@ -62,3 +65,9 @@ export PATH="$PATH:$HOME/bin/mendeleydesktop-1.10.1-linux-x86_64/bin"
 
 # Intellij by JetBrains
 export PATH="$PATH:$HOME/bin/idea-IC-129.713/bin"
+
+# PGF Plots
+export TEXINPUTS="$HOME/bin/latex/pgfplots_1.10/tex//:"
+
+# Hannanum
+export CLASSPATH="$CLASSPATH:$HOME/dev/pkgs/java/hannanum/0.8.4/en/jhannanum.jar"

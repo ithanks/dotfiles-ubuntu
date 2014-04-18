@@ -128,3 +128,13 @@ function ctex() {
     pdflatex $1
     open ${1/.tex}.pdf
 }
+
+# convert
+function iconvext() {
+[[ -n "$1" ]] || { echo "Usage: iconvext [some extension]"; return; }
+    for file in *.$1
+    do
+        iconv -f euckr -t utf8 "$file" | sponge "$file"
+        echo "Converted $file"
+    done
+}
