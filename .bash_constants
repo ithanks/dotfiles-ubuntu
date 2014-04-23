@@ -1,0 +1,5 @@
+#! /bin/bash
+
+DIARY_DIR="/home/e9t/docs/diary"
+MEETING_DIR="/home/e9t/Dropbox/docs/meetings"
+RESEARCH_DIR="/home/e9t/Dropbox/docs/research"

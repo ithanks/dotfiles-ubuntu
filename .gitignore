@@ -31,6 +31,7 @@ VirtualBox VMs/
 .gimp-*/
 .everpad/
 .lastpass/
+.matplotlib/
 .metadata/
 .rstudio-desktop/
 .irssi/
@@ -40,6 +41,8 @@ VirtualBox VMs/
 .gnome/
 .googleearth/
 .npm/
+.tabula/
+.theano/
 .vimgolf/
 .mysql/
 .pylint.d/
@@ -52,6 +55,7 @@ VirtualBox VMs/
 .dropbox*
 .gitk
 .viminfo*
+.vim/spell
 .z
 .pgadmin3
 .pgpass

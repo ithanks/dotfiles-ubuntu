@@ -1,5 +1,7 @@
 #! /bin/bash
 
+. ~/.bash_constants
+
 # Unicode printing
 ucat() {
   [[ -n "$1" ]] || { echo "Usage: ucat [file]"; return; }
@@ -38,7 +40,7 @@ rmd2html() {
 diary() {
     [[ -n "$1" ]] || { echo "Usage: diary [title]"; return; }
 
-    dir="/home/e9t/docs/diary"
+    dir=$DIARY_DIR
     #TODO: filename - transliterate hangul to roman letters
     strip=${1//-/}
     merge=${strip// /-}
@@ -66,7 +68,7 @@ diary() {
 meeting() {
     [[ -n "$1" ]] || { echo "Usage: meeting [title]"; return; }
 
-    dir="/home/e9t/Dropbox/docs/meetings"
+    dir=$MEETING_DIR
     strip=${1//-/}
     merge=${strip// /-}
     clean=${merge//[^a-zA-Z0-9\-]/}
@@ -92,7 +94,7 @@ meeting() {
 
 # Research logs
 research() {
-    dir="/home/e9t/Dropbox/docs/research"
+    dir=$RESEARCH_DIR
     fname=$dir/$(date "+%Y-%m-%d").md
     echo $fname
     vi $fname
