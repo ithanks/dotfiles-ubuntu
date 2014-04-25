@@ -55,7 +55,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # rJava
-export LD_LIBRARY_PATH="/usr/lib/jvm/default-java/jre/lib/amd64/server"
+export LD_LIBRARY_PATH="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server"
 
 # MATLAB
 export PATH="$PATH:$HOME/bin/matlab/r2013b/bin"
