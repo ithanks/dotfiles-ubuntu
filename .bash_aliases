@@ -9,11 +9,12 @@ alias la='ls -A'
 alias l='ls -CF'
 alias rm='rm -i'
 alias tl='tree -L 2'
-alias pop='ssh lucypark@125.131.72.52'
+alias pop='ssh lucypark@popong.com'
 alias dmlab='ssh lucypark@147.46.94.186'
 alias pyserv='python -m SimpleHTTPServer'
 alias profile='python -m cProfile'
 alias profilec='python -m cProfile --sort=cumulative'
+alias profilen='python -m cProfile --sort=calls'
 alias ipynote='ipython notebook'
 alias gae='dev_appserver.py --port=8192 .'
 alias gaeup='appcfg.py update .'
@@ -36,13 +37,20 @@ alias chrome='/usr/bin/google-chrome'
 alias lc='wc -l *.py'
 alias dpd='find . -name "*.py" | xargs grep import'
 alias psql='sudo -u postgres psql'
-alias lgdb='mysql -h 147.46.94.251 -u root lgtv'
 alias mysql='mysql -u root -p'
 alias gaeup='~/bin/gae/appcfg.py update ~/dev/sites/snuie.org'
 alias duh='du -d 0 -h'
 alias subl='$HOME/bin/Sublime\ Text\ 2/sublime_text'
 alias plot='$HOME/dev/utils/plot.py'
 alias gephi='$HOME/bin/gephi/bin/gephi'
+alias ..="cd .."
+alias ..2="cd ../.."
+alias ..3="cd ../../.."
+alias ..4="cd ../../../.."
+alias ..5="cd ../../../../.."
+alias ports="sudo netstat -plnt"
+alias sitespeed.io="$HOME/bin/sitespeed.io/bin/sitespeed.io"
+alias gistup="gistup --private --"
 
 # SCM Breeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
@@ -71,3 +79,9 @@ export TEXINPUTS="$HOME/bin/latex/pgfplots_1.10/tex//:"
 
 # Hannanum
 export CLASSPATH="$CLASSPATH:$HOME/dev/pkgs/java/hannanum/0.8.4/en/jhannanum.jar"
+
+# nvm
+[ -s "/home/e9t/.nvm/nvm.sh" ] && . "/home/e9t/.nvm/nvm.sh"
+
+# javahome
+export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64/"
