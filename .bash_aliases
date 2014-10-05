@@ -10,14 +10,14 @@ alias l='ls -CF'
 alias rm='rm -i'
 alias tl='tree -L 2'
 alias pop='ssh lucypark@popong.com'
-alias dmlab='ssh lucypark@147.46.94.186'
+alias dmlab='ssh dmlab@hosting01.snu.ac.kr'
 alias pyserv='python -m SimpleHTTPServer'
 alias profile='python -m cProfile'
 alias profilec='python -m cProfile --sort=cumulative'
 alias profilen='python -m cProfile --sort=calls'
 alias ipynote='ipython notebook'
-alias gae='dev_appserver.py --port=8192 .'
-alias gaeup='appcfg.py update .'
+alias gae='/home/e9t/bin/google_appengine/dev_appserver.py --port=8192 .'
+alias gaeup='/home/e9t/bin/google_appengine/appcfg.py update .'
 alias start_apache='sudo /etc/init.d/apache2 start'
 alias restart_apache='sudo /etc/init.d/apache2 restart'
 alias stop_apache='sudo /etc/init.d/apache2 stop'
@@ -38,7 +38,6 @@ alias lc='wc -l *.py'
 alias dpd='find . -name "*.py" | xargs grep import'
 alias psql='sudo -u postgres psql'
 alias mysql='mysql -u root -p'
-alias gaeup='~/bin/gae/appcfg.py update ~/dev/sites/snuie.org'
 alias duh='du -d 0 -h'
 alias subl='$HOME/bin/Sublime\ Text\ 2/sublime_text'
 alias plot='$HOME/dev/utils/plot.py'
@@ -51,6 +50,12 @@ alias ..5="cd ../../../../.."
 alias ports="sudo netstat -plnt"
 alias sitespeed.io="$HOME/bin/sitespeed.io/bin/sitespeed.io"
 alias gistup="gistup --private --"
+alias lg="ssh lucypark@147.46.94.57"
+alias autodoc="cd ~/dev/my/konlpy; sphinx-apidoc -o docs/api konlpy corpus"
+alias fnlab="mysql -h 58.229.6.72 -u rucy fnlab"
+alias venv="source venv/bin/activate"
+alias venvp="cd venv/local/lib/python2.7/site-packages"
+alias pyp="cd /usr/local/lib/python2.7/dist-packages"
 
 # SCM Breeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
@@ -61,6 +66,9 @@ alias gistup="gistup --private --"
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# texlive 2014
+export PATH="/opt/texbin:$PATH"
 
 # rJava
 export LD_LIBRARY_PATH="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server"
@@ -84,4 +92,4 @@ export CLASSPATH="$CLASSPATH:$HOME/dev/pkgs/java/hannanum/0.8.4/en/jhannanum.jar
 [ -s "/home/e9t/.nvm/nvm.sh" ] && . "/home/e9t/.nvm/nvm.sh"
 
 # javahome
-export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64/"
+export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64"

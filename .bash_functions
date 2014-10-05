@@ -100,6 +100,15 @@ research() {
     vi $fname
 }
 
+bill() {
+  # TODO: check file existance
+  [[ -n "$1" ]] || { echo "Usage: bill [billnum]"; return; }
+  dir="/home/e9t/data/popong/bill-docs/txt"
+  aid=`expr ${1:0:2} + 0`
+  fname=$dir/$aid/$1.txt
+  vi $fname
+}
+
 # Get apt-history
 function apt-history(){
       case "$1" in

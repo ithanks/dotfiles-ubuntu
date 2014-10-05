@@ -1,3 +1,7 @@
+# Configuration files
+.gistup.json
+.Rprofile
+
 # History logs
 .bash_history
 .lesshst
@@ -39,26 +43,32 @@ VirtualBox VMs/
 .wine/
 .qgis/
 .gnome/
+.gradle/
 .googleearth/
-.npm/
-.tabula/
-.theano/
-.vimgolf/
 .mysql/
+.npm/
+.nvm/
+.putty/
 .pylint.d/
 .subversion/
-.tor/
+.sqlworkbench/
 .synaptic/
+.tabula/
+.theano/
+.tor/
+.vimgolf/
 
 # Application Files
 .appcfg*
 .dropbox*
 .gitk
+.npmrc
 .viminfo*
 .vim/spell
 .z
 .pgadmin3
 .pgpass
+.dbshell
 
 # Sensitive folders
 .ssh/*
@@ -106,3 +116,14 @@ examples.desktop
 .gegl-*/
 .ivy2/
 .netbeans/
+.kde/
+.m2/
+.node-gyp/
+.WebStorm8/
+.cordova/
+.fonts/
+.gksu.lock
+.gnupg/
+.icedtea/
+.shotwell/
+.speech-dispatcher/
