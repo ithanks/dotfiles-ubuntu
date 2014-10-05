@@ -13,12 +13,3 @@
 [submodule "bin/z"]
 	path = bin/z
 	url = https://github.com/rupa/z.git
-[submodule ".rbenv"]
-	path = .rbenv
-	url = git@github.com:sstephenson/rbenv.git
-[submodule ".vim/bundle/pylint.vim.git"]
-	path = .vim/bundle/pylint.vim.git
-	url = git@github.com:orenhe/pylint.vim.git
-[submodule ".vim/bundle/vim-markdown"]
-	path = .vim/bundle/vim-markdown
-	url = https://github.com/tpope/vim-markdown.git
