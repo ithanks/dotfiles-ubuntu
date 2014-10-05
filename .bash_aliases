@@ -63,10 +63,6 @@ alias pyp="cd /usr/local/lib/python2.7/dist-packages"
 # z
 . "$HOME/bin/z/z.sh"
 
-# rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
 # texlive 2014
 export PATH="/opt/texbin:$PATH"
 

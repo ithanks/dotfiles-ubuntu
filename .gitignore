@@ -1,0 +1,26 @@
+# Custom
+.scm_breeze/
+.scmbrc
+.z
+
+# Default files
+.ICEauthority
+.Xauthority
+.bash_history
+.cache/
+.compiz/
+.config/
+.dmrc
+.gconf/
+.gnome/
+.lesshst
+.local/
+.macromedia/
+.mozilla/
+.pki/
+.profile
+.ssh/*
+.viminfo
+.xinputrc
+.xsession-errors
+.xsession-errors*
