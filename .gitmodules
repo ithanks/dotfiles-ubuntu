@@ -10,3 +10,6 @@
 [submodule "bin/z"]
 	path = bin/z
 	url = https://github.com/rupa/z.git
+[submodule ".vim/bundle/vim-markdown"]
+	path = .vim/bundle/vim-markdown
+	url = https://github.com/tpope/vim-markdown.git

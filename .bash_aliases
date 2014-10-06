@@ -89,3 +89,6 @@ export CLASSPATH="$CLASSPATH:$HOME/dev/pkgs/java/hannanum/0.8.4/en/jhannanum.jar
 
 # javahome
 export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
+
+# Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
