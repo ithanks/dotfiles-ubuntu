@@ -1,0 +1,7 @@
+#! /bin/bash
+
+cd _source
+for i in *.md
+do
+    pandoc -f markdown -t beamer $i > ../${i/md/tex};
+done

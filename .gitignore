@@ -22,3 +22,13 @@
 .xinputrc
 .xsession-errors
 .xsession-errors*
+
+# LaTeX
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.nav
+*.snm
+*.toc
+*.vrb

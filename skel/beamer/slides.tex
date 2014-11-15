@@ -1,0 +1,69 @@
+%----------------------------------------------------------------------------
+% Slides for Ph.D. Dissertation at Seoul National University
+%
+% Copyright 2014 Lucy Park <ejpark04@snu.ac.kr>
+% http://lucypark.kr
+%
+% This file may be distributed and/or modified under the GNU GPL 3.0 or above
+% http://www.gnu.org/licenses/gpl-3.0.html
+%----------------------------------------------------------------------------
+
+\documentclass[compress, 11pt, t]{beamer}
+
+\usepackage{kotex}
+\usepackage{amsmath}
+\usepackage{beamerthemeshadow}
+    \setbeamersize{text margin left=10pt,text margin right=10pt}
+\usepackage[backend=biber, style=authoryear, maxcitenames=1]{biblatex}
+    \addbibresource{ref.bib}
+    \renewcommand\bibfont{\scriptsize}
+    \newcommand{\citep}[1]{\textcolor{gold}{(\cite{#1})}}
+    \newcommand{\citeq}[1]{\textcolor{white}{\citeauthor{#1}, \citetitle{#1}, \citeyear{#1}.}}
+    % \fullcite, \textcite, \footfullcite
+
+\usetheme{snubeam}
+\usepackage{graphicx} % http://stackoverflow.com/a/13020592/1054939
+    \makeatletter
+    \def\ScaleIfNeeded{
+      \ifdim\Gin@nat@width>\linewidth
+        0.8\linewidth
+      \else
+        \Gin@nat@width
+      \fi
+    }
+    \makeatother
+    \setkeys{Gin}{width=\ScaleIfNeeded}
+\usepackage{hyperref}
+    \hypersetup{
+        colorlinks   = true,
+        citecolor    = gray,
+        linkcolor    = blue,
+    }
+
+\begin{document}
+\title{This is an actual title}
+\author[E. Park et al.]{Eunjeong Park, Sungzoon Cho\\\href{mailto:epark@dm.snu.ac.kr}{epark@dm.snu.ac.kr}}
+\institute{
+    College of Engineering\\
+    Seoul National University}
+\date{\today}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{images/snu-shift}}
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+}
+
+\begin{frame}\frametitle{Contents}
+    \tableofcontents
+\end{frame}
+
+\section[Intro]{Introduction}\include{intro}
+
+\begin{frame}[t, allowframebreaks]\frametitle{References}
+    \nocite{*} % This includes all references in ref.bib
+    \printbibliography
+\end{frame}
+
+\end{document}

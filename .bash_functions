@@ -8,9 +8,29 @@ ucat() {
   native2ascii -encoding UTF-8 -reverse $1
 }
 
+uconv() {
+  [[ -n "$1" ]] || { echo "Usage: uconv [file]"; return; }
+  iconv -f euc-kr -t UTF-8 $1 >> tmp.txt
+  mv tmp.txt $1
+  echo "Converted $1"
+}
+
+uconvs() {
+  [[ -n "$1" ]] || { echo "Usage: uconvs [some extension]"; return; }
+  for file in *.$1
+  do
+      iconv -f euckr -t utf8 "$file" | sponge "$file"
+      echo "Converted $file"
+  done
+}
+
 uhead() {
   [[ -n "$1" ]] || { echo "Usage: uhead [file]"; return; }
   head $1 | native2ascii -encoding UTF-8 -reverse
+}
+
+beamer() {
+  cp -r ~/skel/beamer/* .
 }
 
 # File conversion
@@ -140,12 +160,3 @@ function ctex() {
     open ${1/.tex}.pdf
 }
 
-# convert
-function iconvext() {
-[[ -n "$1" ]] || { echo "Usage: iconvext [some extension]"; return; }
-    for file in *.$1
-    do
-        iconv -f euckr -t utf8 "$file" | sponge "$file"
-        echo "Converted $file"
-    done
-}
