@@ -33,6 +33,10 @@ beamer() {
   cp -r ~/skel/beamer/* .
 }
 
+remark() {
+  cp -r ~/skel/remark/* .
+}
+
 # File conversion
 rmd2html() {
     [[ -n "$1" ]] || { echo "Usage: rmd2html [file]"; return; }
