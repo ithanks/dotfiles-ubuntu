@@ -37,7 +37,6 @@ alias chrome='/usr/bin/google-chrome'
 alias lc='wc -l *.py'
 alias dpd='find . -name "*.py" | xargs grep import'
 alias psql='sudo -u postgres psql'
-alias mysql='mysql -u root -p'
 alias duh='du -d 0 -h'
 alias subl='$HOME/bin/Sublime\ Text\ 2/sublime_text'
 alias plot='$HOME/dev/utils/plot.py'
@@ -56,8 +55,16 @@ alias fnlab="mysql -h 58.229.6.72 -u rucy fnlab"
 alias venv="source venv/bin/activate"
 alias venvp="cd venv/local/lib/python2.7/site-packages"
 alias pyp="cd /usr/local/lib/python2.7/dist-packages"
+alias docs="cd /home/e9t/Dropbox/docs/"
+alias dmweb="ssh epark@110.10.174.85"
+alias monitor="cvt 1920 1080 60; xrandr --newmode '1920x1080_60.00' 146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync; xrandr --addmode DP1 '1920x1080_60.00'; xrandr --output DP1 --rotate left"
+alias trackpad="xinput set-prop 11 'Device Enabled' 0"
 
-# SCM Breeze
+# rvm
+source ~/.rvm/scripts/rvm
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# SCM Breeze (should come after loading rvm)
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
 
 # z
