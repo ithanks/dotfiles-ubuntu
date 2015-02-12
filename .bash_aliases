@@ -1,7 +1,7 @@
 # Enable colors in bash
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagacedx
-export PS1='\n\[\033[01;35m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$ '
+export PS1='\n\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$ '
 
 # Some more ls aliases
 alias ll='ls -alF'
@@ -59,10 +59,6 @@ alias docs="cd /home/e9t/Dropbox/docs/"
 alias dmweb="ssh epark@110.10.174.85"
 alias monitor="cvt 1920 1080 60; xrandr --newmode '1920x1080_60.00' 146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync; xrandr --addmode DP1 '1920x1080_60.00'; xrandr --output DP1 --rotate left"
 alias trackpad="xinput set-prop 11 'Device Enabled' 0"
-
-# rvm
-source ~/.rvm/scripts/rvm
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # SCM Breeze (should come after loading rvm)
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
