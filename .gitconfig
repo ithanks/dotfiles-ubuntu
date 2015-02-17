@@ -15,6 +15,3 @@
 
 [core]
     quotepath = false
-
-[push]
-	default = simple
