@@ -58,7 +58,7 @@ syntax enable
 try
     let g:solarized_termtrans=1
     set background=dark
-    colorscheme solarized
+    colorscheme ChocolateLiquor
     set t_Co=256
 catch
 endtry

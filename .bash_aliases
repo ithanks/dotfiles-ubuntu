@@ -15,7 +15,7 @@ alias pyserv='python -m SimpleHTTPServer'
 alias profile='python -m cProfile'
 alias profilec='python -m cProfile --sort=cumulative'
 alias profilen='python -m cProfile --sort=calls'
-alias ipynote='ipython notebook'
+alias ipynote='ipython notebook --no-browser --port=8889'
 alias gae='/home/e9t/bin/google_appengine/dev_appserver.py --port=8192 .'
 alias gaeup='/home/e9t/bin/google_appengine/appcfg.py update .'
 alias start_apache='sudo /etc/init.d/apache2 start'
@@ -59,6 +59,7 @@ alias docs="cd /home/e9t/Dropbox/docs/"
 alias dmweb="ssh epark@110.10.174.85"
 alias monitor="cvt 1920 1080 60; xrandr --newmode '1920x1080_60.00' 146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync; xrandr --addmode DP1 '1920x1080_60.00'; xrandr --output DP1 --rotate left"
 alias trackpad="xinput set-prop 11 'Device Enabled' 0"
+alias pyspark="/home/epark/dev/pkgs/spark-1.5.0-bin-hadoop2.6/bin/pyspark"
 
 # SCM Breeze (should come after loading rvm)
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
@@ -95,3 +96,19 @@ export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
 
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# cuda
+export CUDA_ROOT=/usr/local/cuda-7.0/bin
+export PATH=$CUDA_ROOT:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-7.0/lib64:$LD_LIBRARY_PATH
+
+# virtualenvwrapper
+export WORKON_HOME=~/envs
+mkdir -p $WORKON_HOME
+source /usr/local/bin/virtualenvwrapper.sh
+
+# torch
+. /home/epark/torch/install/bin/torch-activate
+
+# hadoop
+export HADOOP_MAPRED_HOME=/usr/lib/hadoop-mapreduce
