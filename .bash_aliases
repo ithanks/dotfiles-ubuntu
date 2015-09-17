@@ -16,8 +16,8 @@ alias profile='python -m cProfile'
 alias profilec='python -m cProfile --sort=cumulative'
 alias profilen='python -m cProfile --sort=calls'
 alias ipynote='ipython notebook --no-browser --port=8889'
-alias gae='/home/e9t/bin/google_appengine/dev_appserver.py --port=8192 .'
-alias gaeup='/home/e9t/bin/google_appengine/appcfg.py update .'
+alias gae='$HOME/bin/google_appengine/dev_appserver.py --port=8192 .'
+alias gaeup='$HOME/bin/google_appengine/appcfg.py update .'
 alias start_apache='sudo /etc/init.d/apache2 start'
 alias restart_apache='sudo /etc/init.d/apache2 restart'
 alias stop_apache='sudo /etc/init.d/apache2 stop'
@@ -55,11 +55,13 @@ alias fnlab="mysql -h 58.229.6.72 -u rucy fnlab"
 alias venv="source venv/bin/activate"
 alias venvp="cd venv/local/lib/python2.7/site-packages"
 alias pyp="cd /usr/local/lib/python2.7/dist-packages"
-alias docs="cd /home/e9t/Dropbox/docs/"
+alias docs="cd $HOME/Dropbox/docs/"
 alias dmweb="ssh epark@110.10.174.85"
 alias monitor="cvt 1920 1080 60; xrandr --newmode '1920x1080_60.00' 146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync; xrandr --addmode DP1 '1920x1080_60.00'; xrandr --output DP1 --rotate left"
 alias trackpad="xinput set-prop 11 'Device Enabled' 0"
-alias pyspark="/home/epark/dev/pkgs/spark-1.5.0-bin-hadoop2.6/bin/pyspark"
+alias pyspark="$HOME/dev/pkgs/spark-1.5.0-bin-hadoop2.6/bin/pyspark"
+alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
+
 
 # SCM Breeze (should come after loading rvm)
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
@@ -89,7 +91,7 @@ export TEXINPUTS="$HOME/bin/latex/pgfplots_1.10/tex//:"
 export CLASSPATH="$CLASSPATH:$HOME/dev/pkgs/java/hannanum/0.8.4/en/jhannanum.jar"
 
 # nvm
-[ -s "/home/e9t/.nvm/nvm.sh" ] && . "/home/e9t/.nvm/nvm.sh"
+[ -s "$HOME/.nvm/nvm.sh" ] && . "$HOME/.nvm/nvm.sh"
 
 # javahome
 export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
@@ -108,7 +110,7 @@ mkdir -p $WORKON_HOME
 source /usr/local/bin/virtualenvwrapper.sh
 
 # torch
-. /home/epark/torch/install/bin/torch-activate
+. $HOME/torch/install/bin/torch-activate
 
 # hadoop
 export HADOOP_MAPRED_HOME=/usr/lib/hadoop-mapreduce

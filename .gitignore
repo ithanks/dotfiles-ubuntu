@@ -1,10 +1,14 @@
+# Ignore all except dotfiles
+*
+!.*
+
 # Custom
 .z
+.*_history
 
 # Default files
 .ICEauthority
 .Xauthority
-.bash_history
 .cache/
 .compiz/
 .config/
