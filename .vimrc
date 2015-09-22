@@ -58,7 +58,7 @@ syntax enable
 try
     let g:solarized_termtrans=1
     set background=dark
-    colorscheme ChocolateLiquor
+    colorscheme blackboard
     set t_Co=256
 catch
 endtry
@@ -93,6 +93,7 @@ func! DeleteTrailingWhitespaces()
     exe "normal `z"
 endfunc
 autocmd BufWrite *.py :call DeleteTrailingWhitespaces()
+autocmd BufWrite *.md :call DeleteTrailingWhitespaces()
 
 " Line numbering
 set number
