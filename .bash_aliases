@@ -61,6 +61,11 @@ alias monitor="cvt 1920 1080 60; xrandr --newmode '1920x1080_60.00' 146.25  1680
 alias trackpad="xinput set-prop 11 'Device Enabled' 0"
 alias pyspark="$HOME/dev/pkgs/spark-1.5.0-bin-hadoop2.6/bin/pyspark"
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
+alias pfg="pip freeze | grep"
+alias agi="ag --ignore-dir"
+alias sourceb="source ~/.bashrc"
+alias p="python"
+alias htop="htop -u $USER"
 
 
 # SCM Breeze (should come after loading rvm)
@@ -114,3 +119,13 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 # hadoop
 export HADOOP_MAPRED_HOME=/usr/lib/hadoop-mapreduce
+
+# [fuel](https://github.com/mila-udem/fuel)
+export FUEL_DATA_PATH=$HOME/data/fuel
+
+# conda
+export PATH="/home/epark/miniconda/bin:$PATH"
+export PATH="/home/epark/miniconda3/bin:$PATH"
+
+# numba
+export LLVM_CONFIG="/usr/bin/llvm-config"
