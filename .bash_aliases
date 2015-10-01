@@ -65,7 +65,7 @@ alias pfg="pip freeze | grep"
 alias agi="ag --ignore-dir"
 alias sourceb="source ~/.bashrc"
 alias p="python"
-alias htop="htop -u $USER"
+alias htopu="htop -u $USER"
 
 
 # SCM Breeze (should come after loading rvm)
