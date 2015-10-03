@@ -66,6 +66,7 @@ alias agi="ag --ignore-dir"
 alias sourceb="source ~/.bashrc"
 alias p="python"
 alias htopu="htop -u $USER"
+alias tmux_clean="tmux kill-session -a -t `tmux display-message -p "#S"`"
 
 
 # SCM Breeze (should come after loading rvm)
