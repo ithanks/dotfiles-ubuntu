@@ -124,6 +124,18 @@ research() {
     vi $fname
 }
 
+log() {
+    if [ $1 ]; then
+        dir=$1
+        mkdir -p $dir
+    else
+        dir='.'
+    fi
+    fname=$dir/$(date "+%Y-%m-%d-%H%M%S").txt
+    echo $fname
+    vi $fname
+}
+
 bill() {
   # TODO: check file existance
   [[ -n "$1" ]] || { echo "Usage: bill [billnum]"; return; }
