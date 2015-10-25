@@ -101,6 +101,9 @@ set number
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
 
+" Fold with tabs
+set foldmethod=indent
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " 6. Moving around, tabs, windows and buffers
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
