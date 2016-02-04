@@ -1,4 +1,5 @@
 # Enable colors in bash
+export LANG=ko_KR.UTF-8
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagacedx
 export PS1='\n\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$ '
@@ -47,6 +48,7 @@ alias ..3="cd ../../.."
 alias ..4="cd ../../../.."
 alias ..5="cd ../../../../.."
 alias ports="sudo netstat -plnt"
+alias portsv="sudo netstat -tulpn | grep tcp | grep -v - | awk '{print $4, $7}' | sort | uniq"
 alias sitespeed.io="$HOME/bin/sitespeed.io/bin/sitespeed.io"
 alias gistup="gistup --private --"
 alias lg="ssh lucypark@147.46.94.57"
@@ -66,7 +68,9 @@ alias agi="ag --ignore-dir"
 alias sourceb="source ~/.bashrc"
 alias p="python"
 alias htopu="htop -u $USER"
+alias gtop="nvidia-smi -l 1"
 alias tmux_clean="tmux kill-session -a -t `tmux display-message -p "#S"`"
+alias sejong="cd /home/epark/data/korean/sejong/cd1/02_말뭉치/현대/문어/현대문어_말뭉치/형태분석_말뭉치"
 
 
 # SCM Breeze (should come after loading rvm)
@@ -74,9 +78,6 @@ alias tmux_clean="tmux kill-session -a -t `tmux display-message -p "#S"`"
 
 # z
 . "$HOME/bin/z/z.sh"
-
-# texlive 2014
-export PATH="/opt/texbin:$PATH"
 
 # rJava
 export LD_LIBRARY_PATH="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server"
@@ -106,9 +107,10 @@ export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # cuda
-export CUDA_ROOT=/usr/local/cuda-7.0/bin
+export CUDA_ROOT="/usr/local/cuda-7.0/bin"
+export CUDA_HOME="/usr/local/cuda"
 export PATH=$CUDA_ROOT:$PATH
-export LD_LIBRARY_PATH=/usr/local/cuda-7.0/lib64:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH="/usr/local/cuda-7.0/lib64:$LD_LIBRARY_PATH"
 
 # virtualenvwrapper
 export WORKON_HOME=~/envs
@@ -130,3 +132,13 @@ export PATH="/home/epark/miniconda3/bin:$PATH"
 
 # numba
 export LLVM_CONFIG="/usr/bin/llvm-config"
+
+# bazel
+export PATH="$PATH:/home/epark/dev/pkgs/bazel/output/bazel"
+
+# spark-jupyter
+export SPARK_HOME="$HOME/dev/pkgs/spark-1.5.0-bin-hadoop2.6"
+export PYTHONPATH=$SPARK_HOME/python/:$PYTHONPATH
+#export PYTHONPATH=$SPARK_HOME/python/lib/py4j-0.8.2.1-src.zip:$PYTHONPATH
+export LD_LIBRARY_PATH="/usr/lib/hadoop/lib/native:$LD_LIBRARY_PATH"
+export SPARK_LOCAL_IP="147.46.94.186"

@@ -82,6 +82,7 @@ set expandtab
 
 " Be smart when using tabs
 set smarttab
+set autoindent
 
 " One tab equals four space
 set shiftwidth=4
@@ -102,7 +103,7 @@ set number
 map <leader>pp :setlocal paste!<cr>
 
 " Fold with tabs
-set foldmethod=indent
+"set foldmethod=indent
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " 6. Moving around, tabs, windows and buffers
