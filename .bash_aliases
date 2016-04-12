@@ -2,7 +2,7 @@
 export LANG=ko_KR.UTF-8
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagacedx
-export PS1='\n\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$ '
+export PS1="\n\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w \[\033[33m\]\$(__git_ps1 '(%s)')\[\033[00m\]\$ "
 
 # Some more ls aliases
 alias ll='ls -alF'
@@ -72,12 +72,14 @@ alias gtop="nvidia-smi -l 1"
 alias tmux_clean="tmux kill-session -a -t `tmux display-message -p "#S"`"
 alias sejong="cd /home/epark/data/korean/sejong/cd1/02_말뭉치/현대/문어/현대문어_말뭉치/형태분석_말뭉치"
 
-
-# SCM Breeze (should come after loading rvm)
+# scm - rvm - (rbenv) - z - autoenv
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
 
 # z
 . "$HOME/bin/z/z.sh"
+
+# autoenv (shell_command_wrapping_enabled=false in ~/.git.scmbrc)
+. /usr/local/bin/activate.sh
 
 # rJava
 export LD_LIBRARY_PATH="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server"
@@ -107,10 +109,9 @@ export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # cuda
-export CUDA_ROOT="/usr/local/cuda-7.0/bin"
-export CUDA_HOME="/usr/local/cuda"
-export PATH=$CUDA_ROOT:$PATH
-export LD_LIBRARY_PATH="/usr/local/cuda-7.0/lib64:$LD_LIBRARY_PATH"
+export CUDA_HOME="/usr/local/cuda-7.5"
+export LD_LIBRARY_PATH="$CUDA_HOME/lib64:$LD_LIBRARY_PATH"
+export PATH="$CUDA_HOME/bin:$PATH"
 
 # virtualenvwrapper
 export WORKON_HOME=~/envs
