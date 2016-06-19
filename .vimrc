@@ -137,3 +137,7 @@ autocmd! BufNewFile * silent! 0r ~/.vim/skel/template.%:e
 " Enable pathogen
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
+
+" http://stackoverflow.com/a/58604/1054939
+nmap <F5> i<C-R>=strftime("%Y-%m-%d %H:%M:%S")<CR><Esc>
+imap <F5> <C-R>=strftime("%Y-%m-%d %H:%M:%S")<CR>
