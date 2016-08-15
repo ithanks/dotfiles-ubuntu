@@ -79,7 +79,7 @@ alias sejong="cd /home/epark/data/korean/sejong/cd1/02_말뭉치/
 . "$HOME/bin/z/z.sh"
 
 # autoenv (shell_command_wrapping_enabled=false in ~/.git.scmbrc)
-. /usr/local/bin/activate.sh
+# . /usr/local/bin/activate.sh
 
 # rJava
 export LD_LIBRARY_PATH="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server"
@@ -114,12 +114,12 @@ export LD_LIBRARY_PATH="$CUDA_HOME/lib64:$LD_LIBRARY_PATH"
 export PATH="$CUDA_HOME/bin:$PATH"
 
 # virtualenvwrapper
-export WORKON_HOME=~/envs
-mkdir -p $WORKON_HOME
-source /usr/local/bin/virtualenvwrapper.sh
+# export WORKON_HOME=~/envs
+# mkdir -p $WORKON_HOME
+# source /usr/local/bin/virtualenvwrapper.sh
 
 # torch
-. $HOME/torch/install/bin/torch-activate
+# . $HOME/torch/install/bin/torch-activate
 
 # hadoop
 export HADOOP_MAPRED_HOME=/usr/lib/hadoop-mapreduce
